@@ -1,0 +1,102 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="ThemeBlue"/>
+
+    <!-- 我们以蓝色为主色调 -->
+    <style name="ThemeBlue" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!--选中状态icon的颜色和字体颜色-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- 进入和退出的动画 -->
+        <item name="android:windowAnimationStyle">@style/ActivityAnimation</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="ThemeBlue">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="Base.ThemeOverlay.AppCompat.Light"/>
+
+    <style name="Brilliant_Text">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="Journey_Text">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:ems">1</item>
+    </style>
+
+    <style name="Fullscreen" parent="@android:style/Theme.Black.NoTitleBar">
+        <!-- 进入和退出的动画 -->
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+        <!--<item name="android:windowBackground">@android:color/lighter_gray</item>-->
+    </style>
+
+    <style name="Base_Dialog" parent="@android:style/Theme.Dialog">
+        <!-- 是否有边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!--标题  -->
+        <item name="android:windowNoTitle">true</item>
+        <!--阴影  -->
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+        <!-- 进入和退出的动画 -->
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+        <!-- 点外边可以消失  -->
+        <item name="android:windowCloseOnTouchOutside">true</item>
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否在悬浮Activity之上  -->
+        <!--<item name="android:windowIsFloating">true</item>-->
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+        <!--<item name="dialogPreferredPadding">120dp</item>-->
+    </style>
+
+    <style name="DialogAnimation">
+        <!--进入 -->
+        <item name="android:windowEnterAnimation">@anim/dialog_scale_in</item>
+        <!--退出-->
+        <item name="android:windowExitAnimation">@anim/dialog_scale_out</item>
+    </style>
+
+    <style name="ActivityAnimation">
+        <!--进入 -->
+        <item name="android:windowEnterAnimation">@anim/anim_activity_in</item>
+        <!--退出-->
+        <item name="android:windowExitAnimation">@anim/anim_activity_out</item>
+    </style>
+
+
+    <style name="Calendar_Head">
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="common_edit_text">
+        <item name="android:maxLength">30</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="common_edit_text_pass" parent="common_edit_text">
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+    <!--自定义Dialog-->
+    <style name="pop_anim_style">
+        <item name="android:windowEnterAnimation">@anim/pop_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_out</item>
+    </style>
+
+    <style name="Theme_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

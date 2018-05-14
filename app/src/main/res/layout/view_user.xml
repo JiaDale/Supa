@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/register_user_name"
+        style="@style/common_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_edit_text"
+        android:hint="@string/register_user_name" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margin_inner"
+        android:background="@drawable/common_edit_text"
+        android:checkedButton="@id/register_user_sex_man"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/view_padding">
+
+        <RadioButton
+            android:id="@+id/register_user_sex_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sex_man"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radio_woman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="@string/sex_woman"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/register_user_birth"
+        style="@style/common_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margin_inner"
+        android:background="@drawable/common_edit_text"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/birth"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/register_user_phone"
+        style="@style/common_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margin_inner"
+        android:background="@drawable/common_edit_text"
+        android:hint="@string/phone"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/register_user_email"
+        style="@style/common_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margin_inner"
+        android:background="@drawable/common_edit_text"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/register_user_num"
+        style="@style/common_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margin_inner"
+        android:background="@drawable/common_edit_text"
+        android:hint="@string/id_num"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/register_user_address"
+        style="@style/common_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margin_inner"
+        android:background="@drawable/common_edit_text"
+        android:hint="@string/address" />
+</LinearLayout>

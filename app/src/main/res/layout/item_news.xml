@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:padding="@dimen/view_margin_inner">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/news_item_image"
+            android:layout_width="@dimen/item_circle_image_more"
+            android:layout_height="@dimen/item_circle_image_more"
+            android:src="@drawable/temp_hotel_background"/>
+
+        <ImageView
+            android:id="@+id/news_item_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/view_margin_tiny"
+            android:layout_marginTop="@dimen/view_margin_tiny"
+            android:src="@drawable/small_red_point"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/view_margin_inner"
+        android:layout_marginRight="@dimen/view_margin_small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_marginBottom="@dimen/view_margin_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/news_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="系统通知"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/news_item_time"/>
+
+                <TextView
+                    android:id="@+id/news_item_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/view_margin_small"
+                    android:text="2018-04-13"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text_size_tiny"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/news_item_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="@string/house_item_detail"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_size_tiny"/>
+    </LinearLayout>
+</LinearLayout>

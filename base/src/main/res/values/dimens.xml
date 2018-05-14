@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_toolbar_image">24dp</dimen>
+
+    <dimen name="negative">-0.5px</dimen>
+    <dimen name="divider_height">0.5px</dimen>
+
+    <dimen name="view_margin_tiny">3dp</dimen>
+    <dimen name="view_margin_small">5dp</dimen>
+    <dimen name="view_margin_inner">10dp</dimen>
+    <dimen name="view_margin_outer">20dp</dimen>
+
+    <dimen name="view_margin_negative">-12dp</dimen>
+    <dimen name="view_padding_tiny_more">2dp</dimen>
+    <dimen name="view_padding_tiny">4dp</dimen>
+    <dimen name="view_padding_small">6dp</dimen>
+    <dimen name="view_padding">6dp</dimen>
+    <dimen name="view_padding_large">10dp</dimen>
+    <dimen name="view_padding_large_more">12dp</dimen>
+
+    <dimen name="item_day_size">42dp</dimen>
+
+    <dimen name="text_size">18sp</dimen>
+    <dimen name="text_size_large_more">18sp</dimen>
+    <dimen name="text_size_large">16sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_tiny">10sp</dimen>
+    <dimen name="text_size_tiny_more">8sp</dimen>
+</resources>

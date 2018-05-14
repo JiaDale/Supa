@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/calendar_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FEFEFE"
+        android:padding="@dimen/view_padding_large">
+
+        <LinearLayout
+            android:id="@+id/indication_left"
+            android:layout_width="@dimen/indication_width"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calendar_check_in"
+                android:textColor="#AEAEAE" />
+
+            <TextView
+                android:id="@+id/check_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6月26日"
+                android:textColor="#323232"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/check_in_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3F3F3F"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/indication_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/indication_left"
+            app:layout_constraintRight_toLeftOf="@id/indication_right"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/calendar_date_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/text_size_small"/>
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="@dimen/divider_height"
+                android:background="@color/blue"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/indication_right"
+            android:layout_width="@dimen/indication_width"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calendar_check_out"
+                android:textColor="#AEAEAE" />
+
+            <TextView
+                android:id="@+id/check_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#323232"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/check_out_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3F3F3F"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/calendar_week"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/calendar_head_background"
+        android:layout_marginRight="@dimen/view_margin_negative"
+        android:layout_marginLeft="@dimen/view_margin_negative"
+        android:paddingBottom="@dimen/view_padding_tiny_more"
+        android:paddingTop="@dimen/view_padding_tiny_more">
+
+        <TextView
+            android:id="@+id/calendar_week_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Sunday"
+            app:layout_constraintEnd_toStartOf="@id/calendar_week_two"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/calendar_week_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Monday"
+            app:layout_constraintEnd_toStartOf="@id/calendar_week_three"
+            app:layout_constraintStart_toEndOf="@id/calendar_week_one"/>
+
+        <TextView
+            android:id="@+id/calendar_week_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Tuesday"
+            app:layout_constraintEnd_toStartOf="@id/calendar_week_four"
+            app:layout_constraintStart_toEndOf="@id/calendar_week_two"/>
+
+        <TextView
+            android:id="@+id/calendar_week_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Wednesday"
+            app:layout_constraintEnd_toStartOf="@id/calendar_week_five"
+            app:layout_constraintStart_toEndOf="@id/calendar_week_three"/>
+
+        <TextView
+            android:id="@+id/calendar_week_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Thursday"
+            app:layout_constraintEnd_toStartOf="@id/calendar_week_six"
+            app:layout_constraintStart_toEndOf="@id/calendar_week_four"/>
+
+        <TextView
+            android:id="@+id/calendar_week_six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Friday"
+            app:layout_constraintEnd_toStartOf="@id/calendar_week_seven"
+            app:layout_constraintStart_toEndOf="@id/calendar_week_five"/>
+
+        <TextView
+            android:id="@+id/calendar_week_seven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Saturday"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/calendar_week_six"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/calendar_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

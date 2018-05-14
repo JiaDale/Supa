@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.jdy.supa.module.main.collect.CollectFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_more">
+
+        <ImageView
+            android:id="@+id/collect_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:scaleType="centerCrop"
+            android:src="@drawable/temp_hotel_background"/>
+
+        <ImageView
+            android:id="@+id/collect_item_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:layout_marginEnd="@dimen/view_margin_inner"
+            android:layout_marginRight="@dimen/view_margin_inner"
+            android:layout_marginTop="@dimen/view_margin_outer"
+            android:background="@drawable/house_item_collect_checked"
+            android:padding="5dp"
+            android:src="@drawable/house_collect"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:layout_marginBottom="@dimen/view_margin_outer"
+            android:background="@drawable/collect_item_price"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/collect_item_price_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"
+                android:textColor="@color/gray_white"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/collect_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1509"
+                android:textColor="@color/gray_white"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/collect_item_head_image"
+            android:layout_width="@dimen/item_circle_image_more"
+            android:layout_height="@dimen/item_circle_image_more"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="@dimen/view_margin_outer"
+            android:layout_marginTop="@dimen/view_margin_outer"
+            android:src="@drawable/temp_hotel_background"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/view_margin_outer"
+        android:layout_marginRight="@dimen/view_margin_outer"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/blue"
+                android:drawableLeft="@drawable/collect_competitive"
+                android:drawablePadding="2dp"
+                android:paddingBottom="1dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="1dp"
+                android:text="精品"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/collect_item_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:ellipsize="end"
+                android:maxEms="13"
+                android:maxLines="1"
+                android:text="@string/collect_item_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_margin_small"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/collect_item_capacity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collect_item_capacity"
+                android:textSize="@dimen/text_size_small"/>
+
+            <TextView
+                android:id="@+id/collect_item_character"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/view_margin_inner"
+                android:ellipsize="end"
+                android:maxEms="13"
+                android:maxLines="1"
+                android:text="@string/collect_item_character"
+                android:textSize="@dimen/text_size_small"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/collect_item_advantages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_margin_inner"
+            android:orientation="horizontal"/>
+
+    </LinearLayout>
+</LinearLayout>

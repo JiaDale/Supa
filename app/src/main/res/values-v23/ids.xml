@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="carouselContainer" type="id"/>
+    <item name="carouselViewPager" type="id"/>
+    <item name="circleIndicator" type="id"/>
+    <item name="numIndicator" type="id"/>
+    <item name="titleView" type="id"/>
+    <item name="carouselTitle" type="id"/>
+    <item name="numIndicatorInside" type="id"/>
+    <item name="indicatorInside" type="id"/>
+    <item name="carouselDefaultImage" type="id"/>
+    <item name="brilliant_separate_top" type="id"/>
+    <item name="brilliant_include" type="id"/>
+    <item name="brilliant_carousel" type="id"/>
+</resources>

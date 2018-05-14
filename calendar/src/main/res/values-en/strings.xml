@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Calendar</string>
+    <string name="Monday">Mon</string>
+    <string name="Tuesday">Tue</string>
+    <string name="Wednesday">Wed</string>
+    <string name="Thursday">Thu</string>
+    <string name="Friday">Fri</string>
+    <string name="Saturday">Sat</string>
+    <string name="Sunday">Sun</string>
+
+
+    <string name="calendar_check_in">check in date</string>
+    <string name="calendar_check_out">check in date</string>
+    <string name="action_ok">OK</string>
+    <string name="item_day_rest">R</string>
+</resources>
